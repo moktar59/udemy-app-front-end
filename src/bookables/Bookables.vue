@@ -11,6 +11,31 @@ import BookableListItem from './BookableListItem'
 export default {
   components: {
     BookableListItem
+  },
+  beforeCreate () {
+    console.log("beforeCreate hook called.");
+  },
+  created() {
+    console.log("Created hook called");
+  },
+  beforeMount () {
+    console.log('beforeMount hook called')
+  },
+  mounted() {
+    console.log('Mounted hook called.')
+  },
+  beforeUpdate() {
+    console.log('befoureMount hook called');
+  },
+  updated() {
+    console.log('mounted hook called')
+  },
+  beforeDestroy() {
+    console.log('Destroyed hook called')
+  },
+  destroyed() {
+    console.log('destroyed hook called.')
   }
+
 }
 </script>
